@@ -1,0 +1,12 @@
+@use "../foundation/breakpoints" as bp;
+
+.l-footer {
+  background: url("/images/footer_background-image.png");
+  width: 100%;
+  height: 150px;
+  color: #fff;
+  @include bp.bp(pc) {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}

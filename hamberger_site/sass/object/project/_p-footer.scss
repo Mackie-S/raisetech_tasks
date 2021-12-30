@@ -1,0 +1,28 @@
+.p-footer {
+  text-align: center;
+  padding-top: 40px;
+  &__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
+    a {
+      color: white;
+    }
+    span {
+      width: 1px;
+      height: 20px;
+      background-color: #fff;
+      display: block;
+      margin: 10px;
+      font-size: 0;
+    }
+  }
+  &__cop {
+    margin: 20px;
+    font-size: 14px;
+  }
+}

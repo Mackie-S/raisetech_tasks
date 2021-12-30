@@ -1,0 +1,39 @@
+@use "../../foundation/breakpoints" as bp;
+/*ダミーサイトと書かれた部分*/
+.p-contents__top {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  @include bp.bp(tab) {
+    display: block;
+    background-size: contain;
+    height: auto;
+  }
+  &__title {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    @include bp.bp(tab) {
+    }
+    @include bp.bp(pc) {
+      font-size: 40px;
+    }
+  }
+  &__image {
+    &--sp {
+      width: 100%;
+      @include bp.bp(tab) {
+        display: none;
+      }
+    }
+    &--pc {
+      display: none;
+      @include bp.bp(tab) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
